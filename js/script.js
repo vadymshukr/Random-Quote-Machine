@@ -42,7 +42,7 @@ const writeRandomQuote = () =>{
             opacity: 0
         }, 500, function(){
             $( this ).animate({opacity: 1}, 500);
-            $('#text').html(quoteText);
+            $('#text').html(`<i class="fas fa-quote-left"></i>` + quoteText + `<i class="fas fa-quote-right"></i>`);
         }
     );
     $( '.quote-section__author' ).animate(
